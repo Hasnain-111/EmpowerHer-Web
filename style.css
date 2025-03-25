@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.cursor{
+    height: 1vw;
+    width: 1vw;
+    border-radius:50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    transition: background-image ease 0.5s;
+    z-index: 8;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: difference;
+}
+.main{
+    background-color: rgb(15,13,13);
+    cursor: none;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+#nav{
+    width:100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 26px;
+    margin-left: 8px;
+}
+#nav-part2{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 20px;
+}
+#nav #circle button{
+    height: 2vw;
+    width: 4.5vw;
+    color: black;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+#nav h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#nav h4:nth-child(1){
+    text-decoration: underline;
+}
+.page1>h1{
+    font-size: 7vw;
+    font-weight: 400;
+    margin-top: 12vw;
+    margin-left: 8vw;
+}
+.page1 h2{
+    font-size: 7vw;
+    font-weight: 400;
+    margin-left: 35vw;
+}
+
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+   left: 20%;
+   transform: translate("-50%,0")
+}
+.page2{
+    width: 100%;
+    min-height: 80vh;
+    padding: 10vw 5vw;
+    border-bottom: 2px solid #212121;
+    position: relative;
+    z-index: 9;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    letter-spacing: .01rem;
+    color: black;
+}
+.page2-container{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2-left{
+    width: 40%;
+}
+.page2-right{
+    width: 24%;
+}
+.page2-left h2{
+    color: black;
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 4vw;
+}
+.page2-right p{
+    color: black;
+    font-size: 1.5vw;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(237,191,255);
+    padding: 5px;
+    margin-top: 0.5vw;
+    color: #211212;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 3.5vw;
+    position: relative;
+    z-index: 9;
+}
+.page3 h1{
+    font-size: 6.5vw;
+    color: black;
+    font-weight: 300;
+    margin-left: 10vw;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3-part1 img{
+    height: 27.25vw;
+    margin-top: 13.7vw;
+    margin-left: 1vw;
+}
+.page3-part1 video{
+   width:48vw;
+   margin-right: 1vw;
+}
+.page4{
+    min-height: 50vw;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 170px 100px;
+}
+.ele{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ele img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+#img1{
+    width: 22vw;
+    height: 24.5vw;
+    left: 2%;
+}
+#img2{
+    right: 5%;
+    height: 25vw;
+    width: 21vw;
+}
+.text-div{
+    height: 8vw;
+    overflow: hidden;
+   
+ 
+}
+.ele h1{
+    font-size: 7.3vw;
+    transition: all ease 0.5s;
+
+}
+.ele:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.ele:hover img{
+    opacity: 1 ;
+    transform: translateY(0%) rotate(0deg);
+  
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5 h2{
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 300;
+    margin-bottom: 3vw;
+
+}
+footer{
+    height: 100vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vw;
+    padding: 0 2vw;
+    border-top: 1px solid #dadada;
+}
+.box:nth-last-child(1){
+    border-bottom: 1px solid #dadada;
+}
+.3header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
